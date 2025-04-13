@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0d6efd" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <title>To-Do List App</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>To-Do List</h1>
+      <p>Organizá tus tareas como si fuera una app 📲</p>
+    </header>
+
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Agregar tarea..." required />
+      <button type="submit">Agregar</button>
+    </form>
+
+    <section>
+      <h2>Tareas</h2>
+      <ul id="todo-list"></ul>
+    </section>
+
+    <section>
+      <h2>Completadas ✅</h2>
+      <ul id="completed-list"></ul>
+    </section>
+
+    <section>
+      <h2>Eliminadas ❌</h2>
+      <ul id="deleted-list"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log("✅ Service Worker registrado"))
+        .catch((e) => console.log("❌ Error con el Service Worker", e));
+    }
+  </script>
+</body>
+</html>

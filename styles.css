@@ -1,0 +1,155 @@
+/* Reset general de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body con fondo suave y texto legible */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Título */
+.tittle {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulario y el input */
+form {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#todo-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Botón de agregar */
+button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo de las listas de tareas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Tareas */
+.task {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del botón de completar */
+.btn-complete {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-complete:hover {
+    background-color: #45a049;
+}
+
+.btn-complete:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Estilo del botón de eliminar */
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-delete:hover {
+    background-color: #e53935;
+}
+
+.btn-delete:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Tareas completadas */
+.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* Tareas eliminadas */
+.deleted {
+    background-color: #f8d7da;
+    color: #721c24;
+    text-decoration: line-through;
+}
+
+/* Secciones de tareas */
+section {
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-bottom: 20px;
+}
