@@ -28,11 +28,19 @@ body {
 }
 
 /* Título */
-.tittle {
+header {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
     font-size: 2rem;
     color: #333;
-    margin-bottom: 20px;
+}
+
+header p {
+    color: #777;
+    font-size: 1rem;
 }
 
 /* Formulario y el input */
@@ -150,6 +158,8 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Mejorar la separación entre las listas */
 ul {
     margin-bottom: 20px;
+    padding-left: 0;
 }
